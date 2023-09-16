@@ -1,5 +1,5 @@
 /* RESET */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,12 +11,12 @@
   src: url(./../fonts/AmazonUIFont-amazonember_rg-cc7ebaa05a2cd3b02c0929ac0475a44ab30b7efa._V2_.woff2);
 }
 
-body{
+body {
   font-family: "Amazon Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* SVG Filters */
-.filter-white{
+.filter-white {
   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(48deg) brightness(106%) contrast(101%);
 }
 
@@ -39,56 +39,57 @@ nav#mainNav {
 }
 
 /* Navbar Buttons */
-.navbarButton1{
+.navbarButton1 {
   border: transparent 1px solid;
   margin: 5px 0px;
   padding: 10px;
 }
-.navbarButton1:hover{
+
+.navbarButton1:hover {
   border: #ddd 1px solid;
   cursor: pointer;
- 
+
 }
 
 /* Logo */
-nav#mainNav #amazonLogo{
+nav#mainNav #amazonLogo {
   display: inline;
 }
 
 /* Country / Delivery */
-nav#mainNav #deliverToSection{
+nav#mainNav #deliverToSection {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-nav#mainNav #deliverToSection section{
+nav#mainNav #deliverToSection section {
   width: 90px;
   height: 40px;
 }
 
-nav#mainNav #deliverToSection p{
+nav#mainNav #deliverToSection p {
   padding-top: 5px;
   height: 40px;
   line-height: 0.8rem;
 }
 
-nav#mainNav #deliverToSection p::first-line{
+nav#mainNav #deliverToSection p::first-line {
   font-weight: normal;
   font-size: 0.8rem;
   color: #ddd;
 }
 
- nav#mainNav #deliverToSection img{
+nav#mainNav #deliverToSection img {
   float: left;
   position: relative;
   width: 19px;
-  top:3px;
+  top: 3px;
 }
 
 /* Search Bar */
-nav#mainNav #searchBarSection{
+nav#mainNav #searchBarSection {
   border: transparent 2px solid;
   border-radius: 10px;
   overflow: hidden;
@@ -101,12 +102,12 @@ nav#mainNav #searchBarSection{
   justify-content: center;
 }
 
-nav#mainNav #searchBarSection:focus-within{
+nav#mainNav #searchBarSection:focus-within {
   border: orange 2px solid;
   background-color: orange;
 }
 
-nav#mainNav #searchBarSection input{
+nav#mainNav #searchBarSection input {
   height: 50px;
   flex-basis: 100%;
   border: none;
@@ -115,14 +116,14 @@ nav#mainNav #searchBarSection input{
   padding: 0px 10px;
 }
 
-nav#mainNav #searchBarSection input:focus{
+nav#mainNav #searchBarSection input:focus {
   outline: none;
 }
 
-#mainNav #searchBarSection .searchBarButton{
-  height:50px;
+#mainNav #searchBarSection .searchBarButton {
+  height: 50px;
   width: 60px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,30 +133,33 @@ nav#mainNav #searchBarSection input:focus{
 
 }
 
-#mainNav #searchBarSection .searchBarButton:nth-of-type(1){
+#mainNav #searchBarSection .searchBarButton:nth-of-type(1) {
   background-color: #ddd;
   border-right: 2px #bbb solid;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-#mainNav #searchBarSection .searchBarButton:nth-of-type(1):hover{
+
+#mainNav #searchBarSection .searchBarButton:nth-of-type(1):hover {
   cursor: pointer;
   background-color: #ccc;
 }
 
-#mainNav #searchBarSection .searchBarButton:nth-of-type(2){
+#mainNav #searchBarSection .searchBarButton:nth-of-type(2) {
   background-color: orange;
 }
-#mainNav #searchBarSection .searchBarButton:nth-of-type(2) i{
+
+#mainNav #searchBarSection .searchBarButton:nth-of-type(2) i {
   color: #131921;
   font-size: 20px;
 }
-#mainNav #searchBarSection .searchBarButton:nth-of-type(2):hover{
+
+#mainNav #searchBarSection .searchBarButton:nth-of-type(2):hover {
   background-color: rgb(225, 146, 0);
 }
 
 /* Language */
-#mainNav #languageSection{
+#mainNav #languageSection {
   min-width: 80px;
   display: flex;
   align-items: center;
@@ -163,35 +167,38 @@ nav#mainNav #searchBarSection input:focus{
   text-align: center;
 }
 
-#mainNav #languageSection #caretDownIcon{
+#mainNav #languageSection #caretDownIcon {
   font-size: 0.7rem;
 }
 
 /* Sign In */
-#mainNav #signInSection{
+#mainNav #signInSection {
   min-width: 145px;
 }
-#mainNav #signInSection #caretDownIcon{
+
+#mainNav #signInSection #caretDownIcon {
   font-size: 0.7rem;
 }
-#mainNav #signInSection p::first-line{
+
+#mainNav #signInSection p::first-line {
   font-weight: normal;
   font-size: 0.8rem;
   color: #ddd;
 }
 
 /* Returns & Orders */
-#mainNav #ordersSection{
+#mainNav #ordersSection {
   min-width: 85px;
 }
-#mainNav #ordersSection p::first-line{
+
+#mainNav #ordersSection p::first-line {
   font-weight: normal;
   font-size: 0.8rem;
   color: #ddd;
 }
 
 /* Cart */
-#mainNav #cartSection{
+#mainNav #cartSection {
   min-width: 90px;
   position: relative;
   display: flex;
@@ -199,7 +206,8 @@ nav#mainNav #searchBarSection input:focus{
   /* gap: 10px; */
   align-items: end;
 }
-.cartIconSprite{
+
+.cartIconSprite {
   background-image: url(./../img/spritesheets/carts-and-icons-spritesheet.png);
   background-repeat: no-repeat;
   width: 38px;
@@ -208,15 +216,16 @@ nav#mainNav #searchBarSection input:focus{
 
   position: relative;
 }
-#cartSection h3{
+
+#cartSection h3 {
   color: orange;
-  position:absolute;
+  position: absolute;
   top: 5px;
   left: 27px;
 }
 
 /* NAVBAR2 */
-#navbar2{
+#navbar2 {
   height: 40px;
   background-color: #232f3e;
   padding: 0px 15px;
@@ -225,7 +234,7 @@ nav#mainNav #searchBarSection input:focus{
   font-size: 0.9rem;
 }
 
-#navbar2 ul{
+#navbar2 ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -236,12 +245,12 @@ nav#mainNav #searchBarSection input:focus{
   height: 40px;
 }
 
-#navbar2 ul li:nth-child(1){
+#navbar2 ul li:nth-child(1) {
   font-weight: bold;
 }
 
 /* Navbar 3 */
-#navbar3{
+#navbar3 {
   height: 35px;
   background-color: #eee;
   border-bottom: #ccc 1px solid;
@@ -251,7 +260,7 @@ nav#mainNav #searchBarSection input:focus{
   color: #333;
 }
 
-#navbar3 ul{
+#navbar3 ul {
   list-style: none;
   height: 35px;
 
@@ -259,11 +268,12 @@ nav#mainNav #searchBarSection input:focus{
   align-items: center;
 }
 
-.navbarButton2{
+.navbarButton2 {
   padding: 10px;
   border-bottom: transparent 3px solid;
 }
-.navbarButton2:hover{
+
+.navbarButton2:hover {
   padding: 7px 10px;
   color: rgb(233, 151, 0);
   border-bottom: orange 3px solid;
@@ -271,59 +281,62 @@ nav#mainNav #searchBarSection input:focus{
 }
 
 /* MAIN SECTION */
-main{
+main {
   /* display: grid; */
   margin: auto;
   max-width: 1500px;
   /* background-color: #232f3e1b; */
-  height: 90vh; /*DELETE LATER*/
+  height: 90vh;
+  /*DELETE LATER*/
   color: black;
 
   font-size: 0.9rem;
 }
 
-main a{
+main a {
   color: rgb(0, 162, 154);
   text-decoration: none;
 }
-main a:hover{
+
+main a:hover {
   color: rgb(243, 154, 0);
   text-decoration: underline;
 }
 
-main #resultsLink{
- color: #555;
- font-size: 0.75rem;
- margin: 10px 0px 10px 10px;
+main #resultsLink {
+  color: #555;
+  font-size: 0.75rem;
+  margin: 10px 0px 10px 10px;
 }
 
-main #resultsLink a{
- color: #555;
- text-decoration: none;
- font-size: 0.75rem;
-}
-main #resultsLink a:hover{
- text-decoration: underline;
+main #resultsLink a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.75rem;
 }
 
-main .grid{
+main #resultsLink a:hover {
+  text-decoration: underline;
+}
+
+main .grid {
   padding: 10px;
   display: grid;
   grid-template-columns: 3.65fr 3fr 1.5fr;
   gap: 1rem;
 }
 
-main .item{
+main .item {
   /* background-color: #eeeeee; */
   height: 100vh;
 }
 
-main #productDisplaySection{
+main #productDisplaySection {
   display: flex;
   gap: 10px;
 }
 
-main #productDisplaySection ul{
+main #productDisplaySection ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -331,32 +344,33 @@ main #productDisplaySection ul{
   gap: 5px;
 }
 
-main #productDisplaySection ul li img{
+main #productDisplaySection ul li img {
   border-radius: 5px;
-  border: 1px #777 solid ;
+  border: 1px #777 solid;
 }
 
-main #productDisplaySection ul li img:hover{
+main #productDisplaySection ul li img:hover {
   cursor: pointer;
 }
 
-main #productDisplaySection #currentImg{
+main #productDisplaySection #currentImg {
   display: flex;
   flex-direction: column;
   position: relative;
   gap: 10px;
 }
 
-main #productDisplaySection #currentImg img{
+main #productDisplaySection #currentImg img {
   position: relative;
   top: 20px;
   width: 600px;
 }
-main #productDisplaySection #currentImg img:hover{
+
+main #productDisplaySection #currentImg img:hover {
   cursor: pointer;
 }
 
-main #productDisplaySection #currentImg p{
+main #productDisplaySection #currentImg p {
   position: relative;
   top: 15px;
   text-align: center;
@@ -364,97 +378,175 @@ main #productDisplaySection #currentImg p{
 }
 
 /* Description Section */
-main #productDescriptionSection{
+main #productDescriptionSection {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-main #productDescriptionSection h2{
+
+main #productDescriptionSection h2 {
   color: black;
   font-weight: normal;
 }
 
-.blackText{
-  color: black; 
+.blackText {
+  color: black;
 }
-.orangeText{
-  color: orange; 
+
+.orangeText {
+  color: orange;
 }
-.whiteText{
-  color: white; 
+
+.whiteText {
+  color: white;
 }
-.greyText{
+
+.greyText {
   color: #777;
 }
 
-.flexRow{
-/* main #productDescriptionSection #ratingsBar{ */
+.flexRow {
+  /* main #productDescriptionSection #ratingsBar{ */
   display: flex;
   gap: 5px;
   align-items: center;
 }
 
-main #productDescriptionSection #ratingsBar #ratingStars{
+main #productDescriptionSection #ratingsBar #ratingStars {
   height: 20px;
 }
 
-main #productDescriptionSection i
-{
+main #productDescriptionSection i {
   font-size: 0.5rem;
   padding-right: 10px;
 }
-main #productDescriptionSection #amznChoice{
+
+main #productDescriptionSection #amznChoice {
   background-color: #131921;
   padding: 2px 5px;
   font-size: 0.8rem;
 }
 
-hr{
+hr {
   color: #ddd;
 }
 
-.superscript{
+.superscript {
   font-size: 0.8rem;
   position: relative;
   bottom: 0.4rem;
 }
 
-.discount{
+.discount {
   font-size: 1.25rem;
   color: rgb(146, 22, 22);
 }
 
-.smallText{
+.smallText {
   font-size: 0.75rem;
 }
 
-.oldPrice{
+.oldPrice {
   text-decoration: line-through;
 }
 
-.hoverableIcon{
+.hoverableIcon {
   color: #777;
 }
 
-.hoverableIcon:hover{
+.hoverableIcon:hover {
   cursor: pointer;
   color: #555;
 }
 
-main #productDescriptionSection table tr td:nth-child(1){
+main #productDescriptionSection table tr td:nth-child(1) {
   font-weight: bold;
   width: 100px;
 }
 
-.card{
+.card {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
 
-main #productPricingSection h2{
+main #productPricingSection .card {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main #productPricingSection h2 {
   font-weight: normal;
 }
-main #productPricingSection i{
+
+main #productPricingSection i {
   font-size: 0.6rem;
+}
+
+.importantDates {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+main #productPricingSection .card a:hover {
+  text-decoration: none;
+}
+
+main #productPricingSection h3.greenText{
+  color: green;
+  font-weight: normal;
+}
+main #productPricingSection form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main #productPricingSection form select{
+  width: 70px;
+  border-radius: 7px;
+  border: #bbb 2px solid;
+  padding: 0px 5px;
+}
+main #productPricingSection form select:hover{
+  cursor: pointer;
+}
+
+main #productPricingSection button{
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+main #productPricingSection button#btn1{
+  background-color: rgb(255, 230, 0);
+}
+main #productPricingSection button#btn2{
+  background-color: rgb(255, 191, 0);
+}
+main #productPricingSection button#btn1:hover{
+  background-color: rgb(255, 230, 0);
+  cursor: pointer;
+}
+main #productPricingSection button#btn2:hover{
+  background-color: rgb(255, 191, 0);
+  cursor: pointer;
+}
+main #productPricingSection table{
+  font-size: 0.7rem;
+}
+main #productPricingSection table tr td:nth-child(1){
+  color: #777;
+  padding-right:20px;
+}
+
+main #productPricingSection #addToListBtn{
+  border: 2px #bbb solid;
+  border-radius: 5px;
+  padding: 8px;
+}
+main #productPricingSection #addToListBtn:hover{
+  cursor: pointer;
+  background-color: #eee;
 }
