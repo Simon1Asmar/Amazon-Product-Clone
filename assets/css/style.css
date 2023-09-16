@@ -213,3 +213,26 @@ nav#mainNav #searchBarSection input:focus{
   left: 27px;
 }
 
+/* NAVBAR2 */
+#navbar2{
+  height: 40px;
+  background-color: #232f3e;
+
+  color: white;
+  font-size: 0.9rem;
+}
+
+#navbar2 ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  gap: 2px;
+
+  height: 40px;
+}
+
+#navbar2 ul li:nth-child(1){
+  font-weight: bold;
+}
