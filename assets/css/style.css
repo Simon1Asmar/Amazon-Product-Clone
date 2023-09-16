@@ -408,6 +408,7 @@ main #productDescriptionSection h2 {
 .flexRow {
   /* main #productDescriptionSection #ratingsBar{ */
   display: flex;
+  flex-direction: row;
   gap: 5px;
   align-items: center;
 }
@@ -435,6 +436,11 @@ hr {
   font-size: 0.8rem;
   position: relative;
   bottom: 0.4rem;
+}
+.superscript2 {
+  font-size: 0.6rem;
+  position: relative;
+  bottom: 0.2rem;
 }
 
 .discount {
@@ -464,14 +470,25 @@ main #productDescriptionSection table tr td:nth-child(1) {
   width: 100px;
 }
 
+main #productDescriptionSection ul {
+  margin: -8px 20px;
+  line-height: 1.5rem;
+}
+
+/* PRICING SECTION */
 .card {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
 
+main #productPricingSection{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 main #productPricingSection .card {
-  padding-left: 25px;
+  padding: 20px 25px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -543,10 +560,17 @@ main #productPricingSection table tr td:nth-child(1){
 
 main #productPricingSection #addToListBtn{
   border: 2px #bbb solid;
-  border-radius: 5px;
-  padding: 8px;
+  border-radius: 9px;
+  padding: 5px;
 }
 main #productPricingSection #addToListBtn:hover{
   cursor: pointer;
   background-color: #eee;
+}
+main #productPricingSection .hoverCard:hover{
+  cursor: pointer;
+}
+
+main #productPricingSection #new22Card p{
+  display: inline-block;
 }
