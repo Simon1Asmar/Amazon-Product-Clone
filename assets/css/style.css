@@ -277,28 +277,32 @@ main{
   max-width: 1500px;
   /* background-color: #232f3e1b; */
   height: 90vh; /*DELETE LATER*/
-  color: #555;
+  color: black;
+
+  font-size: 0.9rem;
 }
 
 main a{
   color: rgb(0, 162, 154);
+  text-decoration: none;
 }
 main a:hover{
   color: rgb(243, 154, 0);
+  text-decoration: underline;
 }
 
-main p:nth-child(1){
+main #resultsLink{
  color: #555;
  font-size: 0.75rem;
  margin: 10px 0px 10px 10px;
 }
 
-main p:nth-child(1) a{
+main #resultsLink a{
  color: #555;
  text-decoration: none;
  font-size: 0.75rem;
 }
-main p:nth-child(1) a:hover{
+main #resultsLink a:hover{
  text-decoration: underline;
 }
 
@@ -310,7 +314,7 @@ main .grid{
 }
 
 main .item{
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
   height: 100vh;
 }
 
@@ -353,9 +357,104 @@ main #productDisplaySection #currentImg img:hover{
 }
 
 main #productDisplaySection #currentImg p{
-position: relative;
-top: 15px;
-text-align: center;
-font-size: 0.85rem;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+}
 
+/* Description Section */
+main #productDescriptionSection{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #productDescriptionSection h2{
+  color: black;
+  font-weight: normal;
+}
+
+.blackText{
+  color: black; 
+}
+.orangeText{
+  color: orange; 
+}
+.whiteText{
+  color: white; 
+}
+.greyText{
+  color: #777;
+}
+
+.flexRow{
+/* main #productDescriptionSection #ratingsBar{ */
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+main #productDescriptionSection #ratingsBar #ratingStars{
+  height: 20px;
+}
+
+main #productDescriptionSection i
+{
+  font-size: 0.5rem;
+  padding-right: 10px;
+}
+main #productDescriptionSection #amznChoice{
+  background-color: #131921;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+}
+
+hr{
+  color: #ddd;
+}
+
+.superscript{
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 0.4rem;
+}
+
+.discount{
+  font-size: 1.25rem;
+  color: rgb(146, 22, 22);
+}
+
+.smallText{
+  font-size: 0.75rem;
+}
+
+.oldPrice{
+  text-decoration: line-through;
+}
+
+.hoverableIcon{
+  color: #777;
+}
+
+.hoverableIcon:hover{
+  cursor: pointer;
+  color: #555;
+}
+
+main #productDescriptionSection table tr td:nth-child(1){
+  font-weight: bold;
+  width: 100px;
+}
+
+.card{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+main #productPricingSection h2{
+  font-weight: normal;
+}
+main #productPricingSection i{
+  font-size: 0.6rem;
 }
